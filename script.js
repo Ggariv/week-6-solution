@@ -74,7 +74,7 @@ $("#citySearchBtn").on("click", function(event){
 
 // open weather API AJAX call and displays the current city, weather, and 5 day forecast to the DOM
 async function displayWeather() {
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial" + "&appid=" + apiKey;
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial" + "&appid=" + apiKey;
     var response = await $.ajax({
         url: queryURL,
         method: "GET"
